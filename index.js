@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 
 
 // your first API endpoint... 
-app.get("/api/", function(req,res) {
+app.get("/api", function(req,res) {
   let date = new Date();
   res.json({
     "unix": date.valueOf(),
@@ -30,11 +30,10 @@ app.get("/api/", function(req,res) {
 })
 app.get("/api/:timestamp", function(req, res) {
   let dateString = req.params.timestamp;
-  if(!/-/.test(dateString)) dateString = +dateString; // in case is in unix form
+  if(/\d{5,}/.test(dateString)) dateString = +dateString; // in case is in unix form
 
   let date = new Date(dateString);
   if( date.toUTCString() === "Invalid Date"){
-    console.log(date, typeof date);
     res.json({error: "Invalid Date"});
   }else{
     res.json({
