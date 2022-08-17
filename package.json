@@ -1,7 +1,7 @@
 {
-  "name": "fcc-api-projects-boilerplate",
+  "name": "parse5214-timestamp-microservices",
   "version": "0.0.1",
-  "description": "An FCC Backend Challenge",
+  "description": "parse5214 FCC Backend Challenge",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -12,15 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/freeCodeCamp/boilerplate-project-timestamp.git"
+    "url": "https://github.com/parse5214/parse5214-timestamp-microservices"
   },
-  "bugs": {
-    "url": "https://github.com/freeCodeCamp/freeCodeCamp/issues"
-  },
-  "homepage": "https://github.com/freeCodeCamp/boilerplate-project-timestamp#readme",
-  "author": "freeCodeCamp <team@freecodecamp.org>",
   "keywords": [
     "node",
+    "heroku",
     "express",
     "freeCodeCamp"
   ],
